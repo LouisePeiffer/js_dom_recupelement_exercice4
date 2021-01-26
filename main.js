@@ -7,7 +7,7 @@ console.log(textSecondH1);
 let laDiv = document.getElementsByTagName('div')[0]
 console.log(laDiv);
 
-let firstLi = laDiv.getElementsByTagName('ul')[0].getElementsByTagName('li')[0]
+let firstLi = laDiv.getElementsByTagName('ul')[0].getElementsByTagName('li')[3]
 console.log(firstLi);
 
 let textFirstLi = firstLi.textContent
@@ -23,8 +23,14 @@ console.log(lesI);
 
 let iArray = Object.values(lesI)
 console.log(iArray);
-
 iArray.forEach(el => {
-    console.log(el.textContent);
+    console.log(el.textContent.toUpperCase());
 });
 
+// Autre méthode
+// let listArray = Array.from(lesI)
+// console.log(listArray);
+
+// listArray.forEach(el => {
+//     console.log(el.innerText.toUpperCase());
+// });
